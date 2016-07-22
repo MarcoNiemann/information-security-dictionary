@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dictionary
+% LaTeX Template
+% Version 1.0 (20/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Vel (vel@latextemplates.com) inspired by a template by Marc Lavaud
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,twoside]{article} % 10pt font size, A4 paper and two-sided margins
+
+\usepackage[top=3.5cm,bottom=3.5cm,left=3.7cm,right=4.7cm,columnsep=30pt]{geometry} % Document margins and spacings
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{palatino} % Use the Palatino font
+
+\usepackage{microtype} % Improves spacing
+
+\usepackage{multicol} % Required for splitting text into multiple columns
+
+\usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
+
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\fancyhead[C]{\large \textbf{Information Security - Glossary}} % Top left 
+\fancyhead[L]{\textsf{\rightmark}} % Top left header
+\fancyhead[R]{\textsf{\leftmark}} % Top right header
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+\fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
+\renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+\newcommand{\entry}[2]{\markboth{#1}{#1}\textbf{#1}\ $\bullet$\ {#2} }
+\newcommand{\defentry}[3]{\markboth{#1}{#1}\textbf{#1}\ $\bullet$\ #2 $\bullet$ \textit{{#3}}}  % Defines the command to print each word on the page, \markboth{}{} prints the first word on the page in the top left header and the last word in the top right
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SECTION A
+%----------------------------------------------------------------------------------------
+
+\section*{A}
+\begin{multicols}{2}
+\defentry{AES}{Advanced Encryption Standard}{symmetric block cipher}
+
+\entry{ARP}{Address Resolution Protocol}
+
+\entry{AS}{Autonomous System}
+\end{multicols}
+
+
+\section*{B}
+\begin{multicols}{2}
+\entry{BGP}{Border Gateway Protocol}
+\end{multicols}
+
+
+\section*{C}
+\begin{multicols}{2}
+\entry{CIDR}{Classless Inter-Domain Routing}
+\end{multicols}
+
+
+\section*{D}
+\begin{multicols}{2}
+\defentry{DES}{Data Encryption Standard}{symmetric Feistel chiffre}
+
+\entry{DHCP}{Dynamic Host Configuration Protocol}
+
+\entry{DNS}{Domain Name System}
+\end{multicols}
+
+
+\section*{E}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{F}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{G}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{H}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{I}
+\begin{multicols}{2}
+\entry{ICANN}{Internet Corporation for Assigned Names and Numbers}
+
+\entry{ICMP}{Internet Control Message Protocol}
+
+\entry{IGRP}{Interior Gateway Routing Protocol}
+
+\entry{IP}{Internet Protocol}
+
+\entry{IPSec}{Internet Protocol Security}
+
+\entry{ISP}{Internet Service Provider}
+
+\end{multicols}
+
+
+\section*{J}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{K}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{L}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{M}
+\begin{multicols}{2}
+\entry{MAC}{Media Access Control (Address)}
+
+\entry{MTU}{Maximum Transfer Size}
+\end{multicols}
+
+
+\section*{N}
+\begin{multicols}{2}
+\entry{NAT}{Netword Address Translation}
+\end{multicols}
+
+
+\section*{O}
+\begin{multicols}{2}
+\entry{OSPF}{Open Shortest Path First}
+\end{multicols}
+
+
+\section*{P}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{Q}
+\begin{multicols}{2}
+
+\end{multicols}
+
+
+\section*{R}
+\begin{multicols}{2}
+\defentry{RC4}{Arcfour}{symmetric stream cipher algorithm}
+
+\entry{RIP}{Routing Information Protocol}
+\end{multicols}
+
+
+\section*{S}
+\begin{multicols}{2}
+\entry{SSTP}{Stream Control Transmission Protocol}
+
+\entry{SSL}{Secure Socket Layer}
+\end{multicols}
+
+
+\section*{T}
+\begin{multicols}{2}
+\entry{TCP}{Transmission Control Protocol}
+
+\entry{TLS}{Transport Layer Security}
+\end{multicols}
+
+
+\section*{U}
+\begin{multicols}{2}
+\entry{UDP}{User Datagram Protocol}
+\end{multicols}
+
+
+\section*{V}
+\begin{multicols}{2}
+\entry{VC}{Virtual Connection}
+\end{multicols}
+
+\section*{W}
+
+\begin{multicols}{2}
+
+\end{multicols}
+
+\section*{X}
+
+\begin{multicols}{2}
+
+\end{multicols}
+
+\section*{Y}
+
+\begin{multicols}{2}
+
+\end{multicols}
+
+\section*{Z}
+
+\begin{multicols}{2}
+
+\end{multicols}
+
+%------------------------------------------------
+\end{document}
