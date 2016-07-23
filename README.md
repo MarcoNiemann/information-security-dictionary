@@ -7,4 +7,4 @@ To do so, two different entry options exist:
 * `entry`: this command takes the shortcut as first parameter and the full name as its second one
 * `defentry`: this command works like `entry` with the difference of providing a third parameter for the additional explanation
 
-If you want to contribute you can either send me updates or additions via E-Mail or you can work this repository and create pull requests with your updates.
+If you want to contribute you can either send me updates or additions via E-Mail or you can fork this repository and create pull requests with your updates.
