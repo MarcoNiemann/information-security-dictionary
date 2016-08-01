@@ -25,11 +25,16 @@
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
-\usepackage{palatino} % Use the Palatino font
-
 \usepackage{microtype} % Improves spacing
 
 \usepackage{multicol} % Required for splitting text into multiple columns
+
+\IfFileExists{meta.sty}{
+  \usepackage{meta}
+  \renewcommand{\sfdefault}{\rmdefault}
+}{
+  \usepackage{palatino} % Use the Palatino font
+}
 
 \usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
 
@@ -57,37 +62,77 @@
 \begin{multicols}{2}
 \defentry{AES}{Advanced Encryption Standard}{symmetric block cipher}
 
+\defentry{AH}{Authentication Header}{authentication, replay protection}
+
 \entry{ARP}{Address Resolution Protocol}
 
-\entry{AS}{Autonomous System}
+\entry{AS}{Autonomous System/ Authentication Server}
+
+\entry{ASLR}{Address Space Layout Randomization}
 \end{multicols}
 
 
 \section*{B}
 \begin{multicols}{2}
+\entry{BEAST}{Browser Exploit Against SSSL/TLS}
+
+\entry{BEET}{Bount-End-to-End-Tunnel}
+
 \entry{BGP}{Border Gateway Protocol}
 \end{multicols}
 
 
 \section*{C}
 \begin{multicols}{2}
+\entry{CA}{Certification Authority}
+
+\defentry{CBC}{Cipher Block Chaining Mode}{block mode for symmetric encryption}
+
+\defentry{CFB}{Ciphertext Feedback Mode}{block mode for symmetric encryption}
+
+\entry{CHAP}{Challenge Handshake Authentication Protocol}
+
 \entry{CIDR}{Classless Inter-Domain Routing}
+
+\entry{CRIME}{Compression Ratio Info-Leak Made Easy}
+
+\entry{CRL}{Certificate Revocation List}
 \end{multicols}
 
 
 \section*{D}
 \begin{multicols}{2}
+\defentry{DDoS}{Distributed Denial of Service}{flood entity with packets}
+
 \defentry{DES}{Data Encryption Standard}{symmetric Feistel chiffre}
+
+\entry{DH}{Diffie Hellman}
 
 \entry{DHCP}{Dynamic Host Configuration Protocol}
 
+\entry{DHE}{Diffie Hellman Ephemeral Mode}
+
+\entry{DMZ}{Demilitarized Zone}
+
 \entry{DNS}{Domain Name System}
+
+\entry{DOI}{Domain of Interpretation}
+
+\entry{DTLS}{Datagram Transport Layer Security Protocol}
 \end{multicols}
 
 
 \section*{E}
 \begin{multicols}{2}
+\defentry{EAP}{Extensible Authentication Protocol}{basic authentication}  
 
+\defentry{EAPOL}{EAP over LAN}{exchange of EAP messages}  
+
+\defentry{ECB}{Electronic Code Book Mode}{block mode for symmetric encryption}
+
+\defentry{ECP}{Encryption Control Protocol}{encryption negotiation}
+
+\defentry{ESP}{Encapsulating Security Payload}{authentication, encryption, replay protection}
 \end{multicols}
 
 
@@ -100,12 +145,18 @@
 \section*{G}
 \begin{multicols}{2}
 \entry{GCD}{Greatest Common Divisor}
+
+\entry{GF}{Galois Field}
+
+\entry{GRE}{Generic Routing Encapsulation}
 \end{multicols}
 
 
 \section*{H}
 \begin{multicols}{2}
+\defentry{HDLC}{High-Level Data Link Control}{network protcol 2\textsuperscript{nd} layer}
 
+\entry{HIDS}{Host Intrusion Detection System}
 \end{multicols}
 
 
@@ -115,14 +166,29 @@
 
 \entry{ICMP}{Internet Control Message Protocol}
 
+\entry{IDEA}{International Data Encryption Algorithm}
+
+\entry{IDS}{Intrusion Detection System}
+
 \entry{IGRP}{Interior Gateway Routing Protocol}
+
+\entry{IHL}{Internet Header Length}
+
+\defentry{IKE}{Internet Key Exchange}{autentication and key exchange protocol}
 
 \entry{IP}{Internet Protocol}
 
+\entry{IPS}{Intrustion Protection System}
+
 \entry{IPSec}{Internet Protocol Security}
+
+\defentry{ISAKMP}{Internet Security Association Key Management Protocol}{generic framework for key authentication/exchange/negotiation}
+
+\entry{ISMS}{Information Security Management System}
 
 \entry{ISP}{Internet Service Provider}
 
+\entry{IV}{Initialization Vector}
 \end{multicols}
 
 
@@ -140,13 +206,29 @@
 
 \section*{L}
 \begin{multicols}{2}
+\entry{L2F}{Layer 2 Forwarding}  
+  
+\entry{L2TP}{Layer 2 Tunneling Protocol}  
+  
+\entry{LAN}{Local Area Network}
 
+\defentry{LCP}{Link Control Protocol}{connection est., test, ...}
 \end{multicols}
 
 
 \section*{M}
 \begin{multicols}{2}
 \entry{MAC}{Media Access Control (Address)}
+
+\entry{MAN}{Metropolitan Area Network}
+
+\entry{MDC}{Modification Detection Code}
+
+\entry{MITM}{Man in the Middle}
+
+\entry{MPLS}{Multi-Protocol Label Switching}
+
+\entry{MPOA}{Multi-Protocol over ATM}
 
 \entry{MTU}{Maximum Transfer Size}
 \end{multicols}
@@ -155,42 +237,105 @@
 \section*{N}
 \begin{multicols}{2}
 \entry{NAT}{Netword Address Translation}
+
+\entry{NCP}{Network Control Protocol}
+
+\entry{NFS}{Network File System}
+
+\entry{NIDS}{Network Intrusion Detection System}
 \end{multicols}
 
 
 \section*{O}
 \begin{multicols}{2}
-\entry{OFB}{Output Feedback Mode}
+\defentry{OFB}{Output Feedback Mode}{block mode for symmetric encryption}
+
+\entry{OAEP}{Optimal Asymmetric Encryption Padding}
+
+\entry{OSI}{Open Systems Interconnection (Model)}
 
 \entry{OSPF}{Open Shortest Path First}
 
-\entry{OTP}{One-Time Pad}
+\entry{OTP}{One-Time Pad/Password}
+
+\entry{OUI}{Organizational Unit Identifier}
 \end{multicols}
 
 
 \section*{P}
 \begin{multicols}{2}
+\entry{PAE}{Port Access Entity}
+  
 \entry{PC}{Permuted Choice}
+
+\entry{PCP}{Payload Compression Protocol}
+
+\entry{PDRR}{Prevention, Detection, Reaction, Recovery}
+
+\entry{PDU}{Payload Data Unit}
+
+\entry{PET}{Privacy Enhancing Technology}
+
+\entry{PFS}{Perfect Forward Security}
+
+\entry{POODLE}{Padding Oracle On Downgraded Legacy Encryption}
+
+\entry{POP}{Point of Presence}
+
+\entry{POTS}{Plain Old Telefone Service}
+
+\entry{PPP}{Point-to-Point Protocol}
+
+\entry{PPTP}{Point-to-Point Tunneling Protocol}
+
+\entry{PSK}{Pre-Shared Key}
+
+\entry{PVC}{Permanent Virtual Circuit}
 \end{multicols}
 
 
 \section*{Q}
 \begin{multicols}{2}
+\entry{QoS}{Quality of Service}
 
 \end{multicols}
 
 
 \section*{R}
 \begin{multicols}{2}
+\defentry{RADIUS}{Remote Authentiation Dial In User Service}{authentication server protocol}  
+
+\entry{RAS}{Remote Access Server}
+  
 \defentry{RC4}{Arcfour}{symmetric stream cipher algorithm}
 
 \entry{RIP}{Routing Information Protocol}
+
+\entry{ROP}{Return Oriented Programming}
+
+\entry{RTT}{Round Trip Time}
 \end{multicols}
 
 
 \section*{S}
 \begin{multicols}{2}
+\defentry{SA}{Security Association}{simplex connection + security services}  
+  
+\defentry{SADB}{Security Association Database}{active SA hash table}  
+  
 \entry{S-Box}{Substitution Box}
+
+\entry{SGT}{Service Granting Ticket}
+
+\entry{SHA}{Secure Hash Algorithm}
+
+\entry{SLIP}{Serial Line IP}
+
+\entry{SMTP}{Simple Mail Transfer Protocol}
+
+\defentry{SPD}{Security Policy Database}{which SA for which IP packet}
+
+\entry{SPI}{Security Parameter Index}
 
 \entry{SSTP}{Stream Control Transmission Protocol}
 
@@ -202,7 +347,19 @@
 \begin{multicols}{2}
 \entry{TCP}{Transmission Control Protocol}
 
+\entry{TGS}{Ticket Granting Server}
+
+\entry{TGT}{Ticket Granting Ticket}
+
 \entry{TLS}{Transport Layer Security}
+
+\entry{TOCTOU}{Time-of-Check, Time-of-Use}
+
+\entry{TOS}{Type of Service}
+
+\entry{TTL}{Time to Live}
+
+\entry{TTP}{Trusted Third Party}
 \end{multicols}
 
 
@@ -214,19 +371,24 @@
 
 \section*{V}
 \begin{multicols}{2}
-\entry{VC}{Virtual Connection}
+\entry{VC}{Virtual Connection/Circuits}
+
+\entry{VPN}{Virtual Private Network}
 \end{multicols}
 
 \section*{W}
-
 \begin{multicols}{2}
+\entry{WAN}{Wide Area Network}
 
+\defentry{WiMAX}{Worldwide Interoperability for Microwave Access}{IEEE 802.16 standard}
+
+\defentry{WLAN}{Wireless Local Area Network}{IEEE 802.11 standards}
 \end{multicols}
 
 \section*{X}
 
 \begin{multicols}{2}
-
+\entry{XSS}{Cross-Site-Scripting}
 \end{multicols}
 
 \section*{Y}
